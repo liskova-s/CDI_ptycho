@@ -1,1 +1,1 @@
-# CDI_ptycho
+# Lensless imaging
