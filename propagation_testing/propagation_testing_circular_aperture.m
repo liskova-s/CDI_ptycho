@@ -56,10 +56,10 @@ tic;
 disp(['Propagation Fresnel, quadratic factor - elapsed time: ', num2str(toc), ' sec.']);
 tic;
 propagatedRS1 = propagationRS(source,c,lambda,z);
-disp(['Propagation Rayleigh-Sommerfield, impulse response - elapsed time: ', num2str(toc), ' sec.']);
+disp(['Propagation Rayleigh-Sommerfeld, impulse response - elapsed time: ', num2str(toc), ' sec.']);
 tic;
 [RSX,RSY,propagatedRS2] = propagationRS_analytic(source, lambda, z, squaresize);
-disp(['Propagation Rayleigh-Sommerfield, transfer function - elapsed time: ', num2str(toc), ' sec.']);
+disp(['Propagation Rayleigh-Sommerfeld, transfer function - elapsed time: ', num2str(toc), ' sec.']);
 tic;
 [FFX,FFY,propagatedFraun] = propagationFF(source,lambda,z,squaresize);
 disp(['Propagation Fraunhoffer - elapsed time: ', num2str(toc), ' sec.']);
@@ -102,14 +102,14 @@ r = c(1,:,1);
     hold on
     scatter(abs(propagatedRS1(:,round(gridsize(1)/2+1))),r,10,DisplayName='Simulated amplitude profile',  MarkerEdgeColor= "#D95319")
     yline(m1, LineStyle="-."); yline(-m1, Linestyle = "-."); xlabel("[m]"); ylabel("Amplitude");
-    title("Rayleigh-Sommerfield propagation")
+    title("Rayleigh-Sommerfeld propagation")
 
     % transfer function validation
     subplot 269
     hold on
     scatter(abs(propagatedRS_resc(:,round(gridsize(1)/2+1))),r,10,DisplayName='Simulated amplitude profile', MarkerEdgeColor = "#D95319")
     yline(m1, LineStyle="-."); yline(-m1, Linestyle = "-."); xlabel("[m]"); ylabel("Amplitude");
-    title("Rayleigh-Sommerfield propagation")
+    title("Rayleigh-Sommerfeld propagation")
    
 
 % Fresnel pattern propagation
