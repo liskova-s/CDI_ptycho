@@ -12,5 +12,5 @@ function field_rescale = rescale_interpol(field,fx,gridsize,c)
                         linspace(start_index, end_index, length(c)));
     % length(c) == size of output matrix
 
-    field_rescale = interp2(X_orig, Y_orig, field_cropped, X_new, Y_new, 'linear');
+    field_rescale = interp2(X_orig, Y_orig, field_cropped, X_new, Y_new, 'nearest');
 end 
