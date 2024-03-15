@@ -116,7 +116,7 @@ r = c(1,:,1);
     % Fresnel impulse response
     subplot 264
     imagesc(c(1,:,1),c(:,1,2),abs(propagatedFresnel1))
-    title("Fresnel propagation - impulse response");xlabel("[m]");ylabel("[m]");
+    title("FR propagation - impulse response");xlabel("[m]");ylabel("[m]");
 
     % Fresnel quadratic factor
     propagatedFr_resc = rescale_interpol(propagatedFresnel2,FFX,gridsize,c);
@@ -124,7 +124,7 @@ r = c(1,:,1);
     subplot 265
     imagesc(c(1,:,1),c(:,1,2),abs(propagatedFr_resc))
     %imagesc(abs(propagatedFresnel2(start_index:end_index,start_index:end_index)))
-    title("Fresnel propagation - quadratic factor");xlabel("[m]");ylabel("[m]");
+    title("FR propagation - quadratic factor");xlabel("[m]");ylabel("[m]");
 
 % Fresnel pattern validation
     % impulse response
@@ -146,7 +146,7 @@ r = c(1,:,1);
 
     subplot 266
     imagesc(c(1,:,1),c(:,1,2),abs(propagatedFraun_resc))
-    title("Fraunhofer propagation");xlabel("[m]");ylabel("[m]");t
+    title("Fraunhofer propagation");xlabel("[m]");ylabel("[m]");
 
 % Fraunhoffer pattern validation
     subplot(2,6,12)
