@@ -1,12 +1,14 @@
 function [FX,FY,u2] = propagationFR_analytic(u1, lambda, z,squaresize)
-    dx = squaresize;
-    [M, N] = size(u1); 
+    [M,~] = size(u1); 
+    dx1 = squaresize;
+    L1 = M*dx1; 
+   
+    L2 = lambda*z/dx1; 
+    dx2 = lambda*z/L1;
     
-    % Spatial frequencies
-    fx = (-N/2:N/2-1) / (N*dx);
-    fy = (-M/2:M/2-1) / (M*dx);
-    [FX, FY] = meshgrid(fx, fy);
-    
+    x2 = -L2/2:dx2:L2/2-dx2; 
+    [FX, FY] = meshgrid(x2, x2);
+
     % Quadratic phase factor 
     H = (exp(-1i * pi * lambda * z * (FX.^2 + FY.^2)));
     u2 = fftshift(fft2((u1 .* H)));
