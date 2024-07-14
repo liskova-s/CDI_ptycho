@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" modified="2024-07-14T15:05:48.221Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15" etag="T46_TPz_v9mbNXa2JnmK" version="24.6.5" type="github">
+  <diagram name="Stránka-1" id="hPWKl8LF27gbrT8-CZEf">
+    <mxGraphModel dx="1650" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-9" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontFamily=Georgia;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="60" width="450" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="240" y="70" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-3" value="$$\mathcal{F}\left\{\right\}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="240" y="75" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="240" y="130" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-5" value="$$\mathcal{F}^{-1}\left\{\right\}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="240" y="135" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-6" value="$$g_k$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="140" y="65" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-8" value="Splnění podmínek ve fourierovské oblasti" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="550" y="95" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-11" value="$$G(u) = |G(u)| \exp[i\phi(u)] = \mathcal{F}\left\{g_k(x)\right\}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="310" y="80" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-13" value="$$g&#39;_k(x)= |g&#39;_k(x)|\exp[i\theta&#39;(x)]=\mathcal{F}^{-1}\left\{G&#39;(u)\right\}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="160" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-15" value="$$G&#39;(u)=|F(u)| \exp[i\phi(u)]$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="310" y="120" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-18" value="Splnění podmínek&amp;nbsp;&lt;div&gt;v objektové oblasti&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="95" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endFill=0;fontFamily=Georgia;" edge="1" parent="1" source="h7WakLgCAWwzdsKOoMfR-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="410" as="sourcePoint" />
+            <mxPoint x="300" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="605" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-20" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endFill=0;fontFamily=Georgia;" edge="1" parent="1" target="h7WakLgCAWwzdsKOoMfR-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="160" as="sourcePoint" />
+            <mxPoint x="-90" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="20" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=0;fontFamily=Georgia;" edge="1" parent="1" target="h7WakLgCAWwzdsKOoMfR-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="80" as="sourcePoint" />
+            <mxPoint x="440" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="605" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;fontFamily=Georgia;" edge="1" parent="1" source="h7WakLgCAWwzdsKOoMfR-18" target="h7WakLgCAWwzdsKOoMfR-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="410" as="sourcePoint" />
+            <mxPoint x="-50" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="20" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-24" value="$$g_{k+1}$$" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="90" y="65" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-25" value="nelineární systém" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h7WakLgCAWwzdsKOoMfR-27" value="" style="endArrow=classic;html=1;rounded=0;endFill=0;fontFamily=Georgia;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="80" as="sourcePoint" />
+            <mxPoint x="240" y="80" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="180" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
