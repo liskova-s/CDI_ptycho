@@ -1,4 +1,5 @@
 function field_rescale = rescale_interpol(field,fx,gridsize,c)
+% Utility function used while comparing differently sampled diffraction patterns (performs interpolation)
     % Dimension recalculation:
     span = -fx(1)+fx(end);  
     resolution = span / gridsize(1);
