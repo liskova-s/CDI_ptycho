@@ -15,12 +15,12 @@ R = 500e-6; % source radius in m
 k = 2*pi/lambda;
 
 % Fresnel number
-fresnel_list = [0.945,0.95]; % <- TADY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+fresnel_list = [0.945,0.95]; % <- 
 z_list = R^2./(fresnel_list.*lambda); 
 
 % GRID parameters
-gridsize = [8001,8001]; % <- TADY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-squaresize = 0.00008; % <- TADY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+gridsize = [8001,8001]; % <- 
+squaresize = 0.00008; % <- 
 
 %_________________________________________________
 c = generate_coordinates(gridsize,squaresize);   
