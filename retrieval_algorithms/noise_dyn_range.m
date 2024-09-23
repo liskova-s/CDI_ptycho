@@ -1,6 +1,6 @@
 % This script simulates diffraction pattern corresponding to
 % parameters of the experiment, considering dynamic range of camera and
-% performs hybrid input-output phase retrieval using Fresnel propagation (propFR, ipropFR).
+% performs hybrid input-output phase retrieval with shrinkwrap updates using Fresnel propagation (propFR, ipropFR).
 
 %close all;
 clear;
@@ -35,7 +35,7 @@ oversampling_ratio = size(image)/size(imageorig)
 % sample to 2024x2024 (camera chip output) + adjust intensity scale
 % 16 bit camera - 65536 gray levels
 intensity = abs(FT).^2;
-scaled_vector = rescale(intensity, 0, 65000); %16bit (65535) ale hodnota maxima je kolem 45000
+scaled_vector = rescale(intensity, 0, 65000); %16bit (65535) value of measured maximum around 45000
 intensity  = double(uint16(scaled_vector));
 
 % Form object mask - square of object size
