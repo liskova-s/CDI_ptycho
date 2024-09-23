@@ -1,6 +1,10 @@
 % Implementation of Hybrid Input-Output algorithm performed with Fresnel
 % propagation propFR and inverse ipropFR. Implementing shrinkwrap support
-% estimation.
+% estimation. Convergence measured in MSE, Fienup's error E_F, structural similarity SSIM and normalized cross-correlation NCC.
+
+% Implementation based on:
+% J. R. Fienup. Phase retrieval algorithms: a comparison. Appl. Opt., 21(15):2758–2769, Aug 1982.
+% Stefano Marchesini, H. He, Henry Chapman, S.P. Hau-Riege, Aleksandr Noy, Malcolm Howells, Uwe Weierstall, and J Spence. X-ray image reconstruction from a diffraction pattern alone. Physical Review B, 68, 07 2003.
 
 %close all;
 clear;
@@ -12,18 +16,11 @@ lambda = 555e-9;
 squaresize = 1e-6;
 z = 10;
 
-% choose pattern:
-%imageorig = cell2mat(struct2cell(load("star_target.mat"))); % working with simple binary star
-%imageorig  = imresize(imageorig , 0.2);
-
+% load object
 imageorig = abs(cell2mat(struct2cell(load("logo.mat")))); % nophase fjfi logo
-%imageorig  = imbinarize(imresize(imageorig , 0.4));% originally used
 imageorig  = imbinarize(imresize(imageorig , 0.2));
 
-
-%padding =  564; for star
-%padding = 1423; %originally used
-padding = 723;
+padding = 723; % adjusting the oversampling ratio sigma
 image = padarray(imageorig , [padding, padding], 'both');
 oversampling_ratio = size(image)/size(imageorig)
 
@@ -36,10 +33,9 @@ rng(2,"twister");
 random_phase = 2*pi*rand(size(measured_amp));
 G_0 = measured_amp.*exp(1i.*random_phase);    %initial detector field
 
-% rectangle for fjfi
+% form support
 object_mask = zeros(size(FT));
 object_mask(padding:end-padding,padding:end-padding)=1;
-
 
 % create initial input
 fprintf("Creating initial input.\n")
