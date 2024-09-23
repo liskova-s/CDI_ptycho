@@ -1,4 +1,5 @@
 function [X2,Y2,u2] = propagationFF(u1, lambda, z,squaresize)
+% Calculates Fraunhofer diffraction pattern of u1 at a z distance
     [M,~] = size(u1); 
     dx1 = squaresize;
     L1 = M*dx1; 
