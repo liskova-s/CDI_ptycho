@@ -1,4 +1,5 @@
 function [x,y,u2] = propagationRS_revised(u1, lambda, z, squaresize)
+% Returns Rayleigh-Sommerfeld diffraction pattern of initial field u1 at distance z
     
     [M,~] = size(u1); % number of samples along single dimension
     size_vector = linspace(-0.5, 0.5, M) * (M-1);
