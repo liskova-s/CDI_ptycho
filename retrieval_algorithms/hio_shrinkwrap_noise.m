@@ -1,4 +1,4 @@
-% Measuring noise effect on hio reconstruction.
+% Simulating and measuring noise effect on hio + shrinkwrap reconstruction.
 
 %close all;
 clear;
@@ -15,7 +15,6 @@ z = 10;
 imageorig = abs(cell2mat(struct2cell(load("logo.mat")))); % nophase fjfi logo
 imageorig  = imbinarize(imresize(imageorig , 0.2));
 padding = 723;
-%padding = 30;
 image = padarray(imageorig , [padding, padding], 'both');
 oversampling_ratio = size(image)/size(imageorig);
 
@@ -29,8 +28,7 @@ random_phase = 2*pi*rand(size(FT));
 object_mask = zeros(size(FT));
 object_mask(padding:end-padding,padding:end-padding)=1;
 
-
-snr_list = [300,500];
+snr_list = [300,500]; % specify simulated noise as SNR (multiple simulations at once)
 N_iter = 1500;
 
 error_object_dom = zeros([length(snr_list),N_iter]);
@@ -87,7 +85,6 @@ for j = 1:length(snr_list)
         error_object_SSIM(j,k)= error_SSIM(measured_object, abs(output_g));
         error_object_NCC(j,k) = error_NCC(measured_object, abs(output_g));
         
-    
         % SHRINKWRAP support update
         if mod(k,shrinkwrap_freq)==0
             % calculate gaussian
@@ -115,9 +112,6 @@ for j = 1:length(snr_list)
         mask_violation = (abs(output_g) <= 0) | (object_mask == 0);
         new_g(mask_violation) = input_g(mask_violation) - beta * output_g(mask_violation);
         new_g(~mask_violation) = output_g(~mask_violation);
-        
-        % intensity constraint
-        %new_g(new_g>1)=1;
         input_g = new_g;
         
         % visualisation
