@@ -27,4 +27,4 @@ _1D diffraction pattern simulation:_
 _HIO-shrinkwrap reconstruction of a binary object (assuming complex nature):_  
  ![](diagrams/reference_and_pattern.png) | ![alt text](diagrams/hio_shrinkwrap_it3000_color.png) 
 :-----------------------:|:-----------------------:|
- Binary image and corresponding diffraction pattern intensity         | Reconstruction after 3000 iterations        
+ _Binary image and corresponding diffraction pattern intensity_         | _Reconstruction after 3000 iterations_        
