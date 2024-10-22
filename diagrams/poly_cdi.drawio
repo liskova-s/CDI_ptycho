@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15" version="24.7.17">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15" version="24.8.0">
   <diagram name="Stránka-1" id="gzaGL7L0HHVrbGZPLo1X">
-    <mxGraphModel dx="2531" dy="1103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+    <mxGraphModel dx="2020" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,7 +56,7 @@
         <mxCell id="2xVWgFofxz-u11tvMQmO-5" value="&lt;b style=&quot;font-size: 17px;&quot;&gt;Object domain&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;fillColor=#8188FD;fontColor=#000000;strokeColor=#001DBC;" parent="1" vertex="1">
           <mxGeometry x="117" y="1642.5" width="253" height="37.5" as="geometry" />
         </mxCell>
-        <mxCell id="2xVWgFofxz-u11tvMQmO-7" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Spectral weights intial estimate&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=25;fontStyle=2;strokeColor=#B3B3B3;" parent="1" vertex="1">
+        <mxCell id="2xVWgFofxz-u11tvMQmO-7" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Spectral weights initial estimate&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=25;fontStyle=2;strokeColor=#B3B3B3;" parent="1" vertex="1">
           <mxGeometry x="970" y="1648.75" width="240" height="80" as="geometry" />
         </mxCell>
         <mxCell id="2xVWgFofxz-u11tvMQmO-8" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Per wavelength random phase initialization&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=25;fontStyle=2;strokeColor=#B3B3B3;" parent="1" vertex="1">
